@@ -13,7 +13,7 @@ from models.state import State
 def state():
     """ get all by id """
     objs = storage.all(State)
-    return jsonify(obj.to_dict() for obj in objs.values()])
+    return jsonify([obj.to_dict() for obj in objs.values()])
 
 
 @app_views.route('/states/<state_id>', methods=['GET'], strict_slashes=False)
