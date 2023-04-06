@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-State module
-     - lists all the states.
+this script containes lists all the states.
 """
 from api.v1.views import app_views
 from flask import jsonify, abort, request, make_response
